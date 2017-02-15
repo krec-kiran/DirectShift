@@ -1,0 +1,161 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require devise_bootstrap_views
+ *= require_tree .
+ *= require_self
+ *= require bootstrap-datepicker
+
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+welcome_body  {
+    background-image: url("/assets/back.jpg") ;
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+body {
+  height: 100%;
+  background: -webkit-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
+  background:    -moz-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
+  background:     -ms-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
+  background:      -o-linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
+  background:         linear-gradient(90deg, #1D976C 10%, #93F9B9 90%);
+  font-family: 'Lato', sans-serif;
+  background-image:'back.jpg';
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+
+h5 {
+    text-align: left;
+    margin-left: 1em;
+
+}
+
+h5.photo
+{
+  text-align: center;
+  margin-left: -2em;
+}
+
+hr.vertical
+{
+   width: 0px;
+   height: 100%; /* or height in PX */
+}
+
+hr{
+   margin-left: 350px;
+   height: 3px solid #000;
+   }
+
+.jobs_body {
+  background: #E9E9E9;
+}
+.panel-width {
+  width: 400px;
+  margin-left: 335px;
+  margin-top: 50px;
+}
+.profile-width{
+  width:100px;
+}
+
+.profile_body{
+  width: 600px;
+  margin-left: 150px;
+  margin-top: 50px;
+}
+
+.experiance-panel{
+  margin-top: 5px;
+  margin-left:500px;
+  width:400px;
+  height: 150px;
+
+}
+
+.certification-panel{
+
+  margin-top: 60px;
+  margin-left:500px;
+  width:400px;
+  height: 150px;
+
+
+}
+
+.education-panel{
+  margin-top:90px;
+  margin-left:500px;
+  width:400px;
+  height: 150px;
+
+}
+
+.profile-panel-picture{
+margin-left:10px;
+width:150px;
+height: 150px;
+border-radius: 25px;
+}
+
+
+.reg-width {
+  width: 500px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.navbar-default {
+  background-color: white;
+  border-radius: 0;
+  height: 80px;
+  padding: 15px 0;
+  border: none;
+}
+
+.navbar-brand {
+  letter-spacing: -1px;
+  font-size: 2em;
+  font-weight: 300;
+  color: #1D976C !important;
+}
+
+.no-padding {
+padding: 0 !important;
+}
+.left-padding {
+padding-left: 15px !important;
+}
+

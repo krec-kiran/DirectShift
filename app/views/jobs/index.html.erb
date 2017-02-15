@@ -1,0 +1,74 @@
+<div class="row">
+<div class="col-md-12 clearfix">
+  <div class="panel-group">
+    <div class="panel panel-default no-padding ">
+      <div class="panel-heading"><b>Job Listing</b></div>
+      <div class="panel-body">
+      <form class="form-inline" role="form">
+      <div class="form-group no-padding col-md-2">
+         <label for="sel1">Within</label>
+          <select class="form-control">
+            <option>10 Miles</option>
+            <option>20 Miles</option>
+            <option>30 Miles</option>
+            <option>40 Miles</option>
+         </select>
+       </div>
+        <div class="form-group">
+        <label for="">of</label>
+        <input type="textfield" class="form-control" id="pwd" placeholder="TN12 6BJ">
+        </div>
+       <div class="form-group">
+        <label for="">from&nbsp;</label>
+        <input type="text" class="datepicker"  placeholder="DD-MM-YYYY">
+        </div>
+        <div class="form-group">
+        <label for="">&nbsp;&nbsp;to</label>
+        <input type="text" class="datepicker" placeholder="DD-MM-YYYY">
+        </div>
+        <div class="col-sm-3 pull-right">
+        <form class="navbar-form" role="search">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+            </div>
+        </div>
+        </form>
+        </div>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-md-16 jobs_body">
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th>Job Code</th>
+      <th>Practice</th>
+      <th>Location</th>
+      <th>Time</th>
+      <th>Distance</th>
+      <th>Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @jobs.each do |j| %>
+    <tr>
+      <td><%= j.jobcode %></td>
+      <td><%= j.practice %></td>
+      <td><%= j.location %> </td>
+      <td><%= j.time %></td>
+      <td><%= j.distance %></td>
+      <td><%= j.rate %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
+</div>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+</script>

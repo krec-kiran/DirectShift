@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  jobcode: MyString
+  practice: MyString
+  location: MyString
+  time: 1
+  distance: MyString
+  rate: MyString
+  from_date: 2016-03-16
+  to_date: 2016-03-16
+  postcode: MyString
+
+two:
+  jobcode: MyString
+  practice: MyString
+  location: MyString
+  time: 1
+  distance: MyString
+  rate: MyString
+  from_date: 2016-03-16
+  to_date: 2016-03-16
+  postcode: MyString
